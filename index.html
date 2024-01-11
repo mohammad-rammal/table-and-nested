@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="files/style.css">
+    <meta http-equiv="refresh" content="3">
+    <title>Table</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="nestedlist">
+            <fieldset>
+                <legend>Invoice</legend>
+                <ul type="square">
+                    <li>Food</li>
+                    <ul type="disc">
+                        <li>Fruits</li>
+                        <ol start="3">
+                            <li>Bananas</li>
+                            <li>Apples</li>
+                        </ol>
+
+                    </ul>
+                    <ul type="disc">
+                        <li>
+                            Legumes
+                        </li>
+                        <ol type="i">
+                            <li>Tomatoes</li>
+                            <li>Carrots</li>
+                        </ol>
+                    </ul>
+                </ul>
+                <ul type="square">
+                    <li>Drink</li>
+                    <ol type="a">
+                        <li>Coffe</li>
+                        <li>Milk</li>
+                    </ol>
+                </ul>
+            </fieldset>
+        </form>
+        <form class="tableform">
+            <table id="invoiceTable">
+                <tr>
+                    <th colspan="6">Invoice</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Food</th>
+                    <th colspan="2">Drink</th>
+                </tr>
+                <tr>
+                    <td colspan="2"> Fruits</td>
+                    <td colspan="2">Legumes</td>
+                    <td rowspan="2">Coffe</td>
+                    <td rowspan="2">2$</td>
+                </tr>
+
+                <tr>
+                    <td>Names</td>
+                    <td>Prices</td>
+                    <td>Names</td>
+                    <td>Prices</td>
+                </tr>
+                <tr>
+                    <td>Bananas</td>
+                    <td>3$</td>
+                    <td>Tomatoes</td>
+                    <td>Prices</td>
+                    <td rowspan="2">Milk</td>
+                    <td rowspan="2">3$</td>
+                </tr>
+
+                <tr>
+                    <td>Apples</td>
+                    <td>3$</td>
+                    <td>Carrots</td>
+                    <td>4$</td>
+                </tr>
+                <tr>
+                    <th colspan="5"> Total Price</th>
+                    <th>20$</th>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <audio id="sound" src="files/song.mp3" autoplay controls loop></audio>
+    <script src="files/javascript.js"></script>
+</body>
+
+</html>
